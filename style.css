@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Product Sans;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+
+#header{
+    margin-bottom:0 ;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-items{
+    
+    cursor: pointer;
+    padding: 2px;
+}
+
+#header-center{
+    height: fit-content;
+}
+
+#header-right{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 30px;
+    align-items: center;
+    transform-style:preserve-3d ;
+    
+}
+
+#header-right .icon {
+    font-size: 35px; /* Adjust the size */
+    margin: 0 10px; /* Add some spacing between icons */
+}
+
+#header-right .github {
+    color: #333; /* GitHub color */
+
+    
+}
+
+#header-right .linkedin {
+    color: #0e76a8; /* LinkedIn color */
+    
+    
+}
+
+#header-right .instagram {
+    color: #e1306c; /* Instagram color */
+    
+    
+}
+
+.header-right-links{
+    transform: translateZ(40px);
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+
+}
+
+/* Lower the height of the drop shadow or increase the height of the overlaying box */
+.typing-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 170%; /* Adjust this as needed */
+    width: 120%;
+    background-color: antiquewhite;
+    border-left: 2px solid black;
+    animation: typing-animation 7.9s steps(20) infinite;
+}
+
+/* Fix the width of .left-side and .right-side */
+.left-side, .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    /* Fixed width to prevent shifting */
+    width: 300px; /* Adjust the width as needed */
+}
+
+.text-change {
+    position: relative;
+    font-size: 60px;
+    font-weight: bold;
+    width: 100%; /* Ensure the text container width matches the parent */
+    text-align: center;
+}
+
+
+@keyframes typing-animation {
+    40%, 60% {
+        left: calc(100% + 2px);
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+.left-side .text-box, .right-side .text-box {
+    position: relative;
+    color: black;
+    /* border: 2px solid black; */
+}
+
+.left-side p, .right-side p {
+    margin-bottom: 20px;
+    text-shadow:
+    0 1.4px 1.1px rgba(0, 0, 0, 0.034),
+    0 3.3px 2.6px rgba(0, 0, 0, 0.048),
+    0 6.3px 5px rgba(0, 0, 0, 0.06),
+    0 11.1px 8.9px rgba(0, 0, 0, 0.072),
+    0 20.9px 16.7px rgba(0, 0, 0, 0.086),
+    0 50px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+.text-change{
+    font-size: 90px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.left-side{
+    margin-left: 85px;
+}
+.right-side{
+    margin-right: 85px;
+}
+
+#main{
+    width: 100%;
+    height: 90%;
+    margin-top: 50px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.resume{
+    width: 27vw;
+    height: 68.5vh;
+    border-radius: 30px;
+    
+    background-image: url('assets/Resume_Anujesh-Ansh_page-0001.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    
+    transform-style:preserve-3d ;
+
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.box{
+    width: 27vw;
+    height: 60vh;
+    border-radius: 15px;
+
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+
+    
+    align-self:flex-start;
+    
+}
+
+.box:hover{
+    transform: translateZ(20px);
+    cursor: crosshair;
+}
+
+
+#box-1{
+    margin-bottom: 50px;
+    background-image: url('assets/Resume_Anujesh-Ansh_page-0001.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 150px;
+    font-size: large;
+    
+}
+
+.footer-items{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+a{
+    text-decoration: none !important;
+    color: black;
+    cursor: pointer;
+}
+
+#footer-center{
+
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.heart-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
+.heart{
+    
+    cursor: pointer;
+    background: red;
+    width:15px;
+    height: 15px;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -1px 1px 9px red;
+    animation: heart 0.6s linear infinite;
+}
+
+.heart:before{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: red;
+    top: -50%;
+    box-shadow: -1px -1px 9px red;
+    border-radius: 50px;
+}
+
+.heart:after{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: red;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: 1px 1px 9px red;
+}
+
+@keyframes heart{
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+
+    80%{
+        transform: rotate(-45deg) scale(1.0); 
+    }
+
+    100%{
+        transform: rotate(-45deg) scale(0.8);
+    }
+}

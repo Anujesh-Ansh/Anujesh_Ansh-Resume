@@ -92,7 +92,6 @@ html, body{
     height: 170%; /* Adjust this as needed */
     width: 120%;
     background-color: antiquewhite;
-    border-left: 2px solid black;
     animation: typing-animation 7.9s steps(20) infinite;
 }
 

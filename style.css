@@ -325,3 +325,24 @@ a{
     }
 }
 
+.downBtn{
+    padding: 15px;
+    border-radius: 15px;
+    background-color: transparent;
+    border-color: black;
+}
+.themeBtn {
+    padding: 15px;
+    border-radius: 15px;
+    background-color: transparent;
+    border-color: black;
+    opacity: 0;
+    /* visibility: hidden; */
+    transition: opacity 0.3s, visibility 0.3s; /* Add transition for smooth effect */
+}
+
+.themeBtn:hover {
+    opacity: 1;
+    
+    cursor: pointer;
+}

@@ -15,10 +15,11 @@
     transition: transform 0.3s ease; /* Smooth transition */
 }
 
-/* .box.zoomed { */
-    /* transform: scale(1.5); Zoom effect */
-    /* background: white; Solid white background */
-/* } */
+.box.zoomed {
+    transform: scale(1.7); /* Zoom effect */
+    background: white; /* Solid white background */
+    z-index: 100;
+}
 
 .box:hover{
     transform: translateZ(10px);
@@ -87,7 +88,7 @@
 }
 .link a{
     color: var(--link);
-    
+    text-decoration: underline !important;
 }
 
 .profile-link:hover{

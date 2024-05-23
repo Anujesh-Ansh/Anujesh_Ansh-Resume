@@ -1,10 +1,10 @@
 :root{
     --link: #1354cb;
+    --purple: #361e77;
 }
 .box{
     width: 100%;
     border-radius: 15px;
-
     background: rgba( 255, 255, 255, 0.1 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 5px );
@@ -12,19 +12,26 @@
     /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
     align-self:flex-start;
     font-family: Arial;
+    transition: transform 0.3s ease; /* Smooth transition */
 }
+
+/* .box.zoomed { */
+    /* transform: scale(1.5); Zoom effect */
+    /* background: white; Solid white background */
+/* } */
 
 .box:hover{
     transform: translateZ(20px);
     cursor: grab;
+    transform: scale(1.5); /* Zoom effect */
+    background: white; /* Solid white background */
+    z-index: 100;
 }
 
 
 #box-header{
     height: 7.5vh;
     border-radius: 30px 30px 15px 15px;
-    
-    
 }
 
 .head{
@@ -49,6 +56,7 @@
     display: flex;
     font-size: 6px;
     font-weight: bold;
+    color: var(--purple);
 }
 
 .profile-links{
@@ -60,7 +68,7 @@
     margin-top: 5px;
     padding: 0%;
     margin-left: 20px;
-    margin-right: 30px;
+    margin-right: 20px;
     
     
 }
@@ -69,11 +77,32 @@
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    font-size: 7px;
+    justify-content: center;
+    align-items: center;
+    font-size: 8.5px;
     gap: 4px;
+}
+.icon{
+    font-size: 10px;
 }
 .link a{
     color: var(--link);
     
 }
 
+.profile-link:hover{
+    transform: translateZ(20px);
+    background-color: white;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.7 );
+    transform: scale(1.5); /* Zoom effect */
+    padding: 1px;
+    border-radius: 5px;
+}
+.subheading:hover{
+    transform: translateZ(20px);
+    background-color: white;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.7 );
+    transform: scale(1.5); /* Zoom effect */
+    padding: 1px;
+    border-radius: 5px;
+}

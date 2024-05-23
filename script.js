@@ -1,3 +1,5 @@
+
+
 const developerText = document.querySelector('#developer-text');
 const engineerText = document.querySelector('#engineer-text');
 
@@ -33,3 +35,14 @@ uploadBtn.addEventListener("click", async () => {
 
 
 // change 'web' and 'software'
+
+//Box zooming in
+// document.addEventListener('DOMContentLoaded', () => {
+//     const boxes = document.querySelectorAll('.box');
+
+//     boxes.forEach(box => {
+//         box.addEventListener('click', () => {
+//             box.classList.toggle('zoomed');
+//         });
+//     });
+// });

@@ -37,12 +37,33 @@ uploadBtn.addEventListener("click", async () => {
 // change 'web' and 'software'
 
 //Box zooming in
+// document.addEventListener('DOMContentLoaded', () => {
+//     const boxes = document.querySelectorAll('.box');
+
+//     boxes.forEach(box => {
+//         box.addEventListener('click', () => {
+//             box.classList.toggle('zoomed');
+//         });
+//     });
+// });
+
 document.addEventListener('DOMContentLoaded', () => {
     const boxes = document.querySelectorAll('.box');
+    let currentlyZoomedBox = null;
 
     boxes.forEach(box => {
         box.addEventListener('click', () => {
-            box.classList.toggle('zoomed');
+            if (currentlyZoomedBox && currentlyZoomedBox !== box) {
+                currentlyZoomedBox.classList.remove('zoomed');
+            }
+            
+            if (box.classList.contains('zoomed')) {
+                box.classList.remove('zoomed');
+                currentlyZoomedBox = null;
+            } else {
+                box.classList.add('zoomed');
+                currentlyZoomedBox = box;
+            }
         });
     });
 });

@@ -21,16 +21,16 @@
 /* } */
 
 .box:hover{
-    transform: translateZ(20px);
+    transform: translateZ(10px);
     cursor: grab;
-    transform: scale(1.5); /* Zoom effect */
+    transform: scale(1.2); /* Zoom effect */
     background: white; /* Solid white background */
     z-index: 100;
 }
 
 
 #box-header{
-    height: 7.5vh;
+    height: 8vh;
     border-radius: 30px 30px 15px 15px;
 }
 

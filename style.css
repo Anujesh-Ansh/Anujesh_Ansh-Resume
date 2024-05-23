@@ -1,3 +1,14 @@
+@import url(styles/box.css);
+
+:root{
+    --bg: antiquewhite;
+    --red: #FF3C41;
+    --git: #333;
+    --linkedIn: #0e76a8;
+    --insta: #e1306c;
+    
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,12 +19,12 @@
 html, body{
     height: 100%;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: var(--bg);
     overflow: hidden;
 }
 
 
-#header{
+header{
     margin-bottom:0 ;
     padding-left: 2%;
     padding-right: 2%;
@@ -52,19 +63,19 @@ html, body{
 }
 
 #header-right .github {
-    color: #333; /* GitHub color */
+    color: var(--git); /* GitHub color */
 
     
 }
 
 #header-right .linkedin {
-    color: #0e76a8; /* LinkedIn color */
+    color: var(--linkedIn); /* LinkedIn color */
     
     
 }
 
 #header-right .instagram {
-    color: #e1306c; /* Instagram color */
+    color: var(--insta); /* Instagram color */
     
     
 }
@@ -91,7 +102,7 @@ html, body{
     left: 0;
     height: 170%; /* Adjust this as needed */
     width: 120%;
-    background-color: antiquewhite;
+    background-color: var(--bg);
     animation: typing-animation 7.9s steps(20) infinite;
 }
 
@@ -126,7 +137,7 @@ html, body{
 
 .left-side .text-box, .right-side .text-box {
     position: relative;
-    color: black;
+    color: var(--git);
     /* border: 2px solid black; */
 }
 
@@ -172,16 +183,18 @@ html, body{
     flex-direction: column;
     
     
+    
 }
 
 .resume{
     width: 27vw;
     height: 68.5vh;
     border-radius: 30px;
+    border: 1px solid var(--red);
     
     background-image: url('assets/Anujesh-Ansh_Resume.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size:cover;
     background-position: center;
     
     display: flex;
@@ -197,37 +210,6 @@ html, body{
     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
-}
-
-.box{
-    width: 27vw;
-    height: 60vh;
-    border-radius: 15px;
-
-    background: rgba( 255, 255, 255, 0.1 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 3px );
-    -webkit-backdrop-filter: blur( 3px );
-    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
-
-
-    
-    align-self:flex-start;
-    
-}
-
-.box:hover{
-    transform: translateZ(20px);
-    cursor: crosshair;
-}
-
-
-#box-1{
-    margin-bottom: 50px;
-    background-image: url('assets/Resume_Anujesh-Ansh_page-0001.jpg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 
@@ -247,13 +229,14 @@ footer{
     align-items: center;
     width: max-content;
     height: 10px;
-    font-size: 20px;
+    font-size: 15px;
+    
     /* border: 1px solid black; */
 }
 
 a{
     text-decoration: none !important;
-    color: black;
+    color: var(--git);
     cursor: pointer;
 }
 
@@ -280,12 +263,12 @@ a{
 .heart{
     
     cursor: pointer;
-    background: red;
+    background: var(--red);
     width:15px;
     height: 15px;
     position: relative;
     transform: rotate(-45deg);
-    box-shadow: -1px 1px 9px red;
+    box-shadow: -1px 1px 9px var(--red);
     animation: heart 0.6s linear infinite;
 }
 
@@ -294,9 +277,9 @@ a{
     position: absolute;
     height: 15px;
     width: 15px;
-    background: red;
+    background: var(--red);
     top: -50%;
-    box-shadow: -1px -1px 9px red;
+    box-shadow: -1px -1px 9px var(--red);
     border-radius: 50px;
 }
 
@@ -305,10 +288,10 @@ a{
     position: absolute;
     height: 15px;
     width: 15px;
-    background: red;
+    background: var(--red);
     right: -50%;
     border-radius: 50px;
-    box-shadow: 1px 1px 9px red;
+    box-shadow: 1px 1px 9px var(--red);
 }
 
 @keyframes heart{
@@ -325,17 +308,12 @@ a{
     }
 }
 
-.downBtn{
-    padding: 15px;
-    border-radius: 15px;
-    background-color: transparent;
-    border-color: black;
-}
+
 .themeBtn {
     padding: 15px;
     border-radius: 15px;
     background-color: transparent;
-    border-color: black;
+    border-color: var(--git);
     opacity: 0;
     /* visibility: hidden; */
     transition: opacity 0.3s, visibility 0.3s; /* Add transition for smooth effect */
@@ -346,3 +324,179 @@ a{
     
     cursor: pointer;
 }
+
+
+
+.upload {
+    --btn-color: #3bafda;
+    --progress-color: #2d334c;
+    width: min-content;
+    --ease-in-out-quartic: cubic-bezier(0.77, 0, 0.175, 1);
+    
+    display: flex;
+    background: grey;
+    border-radius: 10px;
+    box-shadow: 0 1.7px 1.4px rgba(0, 0, 0, 0.2), 0 4px 3.3px rgba(0, 0, 0, 0.28), 0 7.5px 6.3px rgba(0, 0, 0, 0.35), 0 13.4px 11.2px rgba(0, 0, 0, .42), 0 25.1px 20.9px rgba(0, 0, 0, 0.5), 0 60px 50px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    transform: rotate(0);
+    
+}
+.upload__info {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    margin-left: 2px;
+}
+.upload_filename{
+    color: antiquewhite;
+}
+.upload__button {
+    position: relative;
+    padding: 7px;
+    font-size: 90%;
+    font-family: inherit;
+    background: none;
+    border-radius: inherit;
+    outline: none;
+    cursor: pointer;
+    transform: scale(0.9);
+  }
+  .upload__button::before {
+    position: absolute;
+    content: "";
+
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg);
+    border-radius: inherit;
+    transform-origin: right;
+  }
+  .upload__hint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: grey;
+    transform: translateY(100%);
+  }
+  .upload__progress {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: var(--progress-color);
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  .upload__progress .check {
+    stroke-dasharray: 7px;
+    stroke-dashoffset: 7px;
+    
+  }
+  .upload.uploading .upload__button {
+    animation: expand 0.3s forwards;
+  }
+  .upload.uploading .upload__button::before {
+    animation: fill-left 1.2s 0.4s var(--ease-in-out-quartic) forwards;
+  }
+  .upload.uploading .upload__info > *, .upload.uploading .upload__button__text {
+    animation: fade-up-out 0.4s 0.4s forwards;
+  }
+  .upload.uploading .upload__hint {
+    animation: fade-up-in 0.4s 0.8s forwards;
+  }
+  .upload.uploading .upload__progress {
+    animation: fill-right 2s 1s var(--ease-in-out-quartic) forwards;
+  }
+  .upload.uploaded .upload__progress {
+    animation: slide-up 1s var(--ease-in-out-quartic) forwards;
+  }
+  .upload.uploaded .upload__progress .check {
+    animation: stroke-in 0.6s 0.4s var(--ease-in-out-quartic) forwards;
+  }
+  .upload.uploaded-after .upload__info {
+    animation: slide-down-info 1s var(--ease-in-out-quartic) forwards;
+  }
+  .upload.uploaded-after .upload__button {
+    animation: slide-down-button 1s var(--ease-in-out-quartic) forwards;
+  }
+  .upload.uploaded-after .upload__progress {
+    animation: slide-down-progress 1s var(--ease-in-out-quartic) forwards;
+  }
+  @keyframes expand {
+    to {
+      transform: scale(1);
+    }
+  }
+  @keyframes fill-left {
+    to {
+      transform: scale(4, 1.2);
+    }
+  }
+  @keyframes fade-up-out {
+    to {
+      opacity: 0;
+      transform: translateY(-40%);
+    }
+  }
+  @keyframes fade-up-in {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fill-right {
+    to {
+      transform: scaleX(1);
+    }
+  }
+  @keyframes slide-up {
+    from {
+      transform: scaleX(1) translateY(0);
+    }
+    to {
+      transform: scaleX(1) translateY(-90%);
+    }
+  }
+  @keyframes stroke-in {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes slide-down-info {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  @keyframes slide-down-button {
+    from {
+      transform: scale(0.9) translateY(-100%);
+    }
+    to {
+      transform: scale(0.9) translateY(0);
+    }
+  }
+  @keyframes slide-down-progress {
+    from {
+      transform: scaleX(1) translateY(-90%);
+    }
+    to {
+      transform: scaleX(1) translateY(10%);
+    }
+  }

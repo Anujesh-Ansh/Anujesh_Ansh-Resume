@@ -106,3 +106,31 @@
     padding: 1px;
     border-radius: 5px;
 }
+
+#box-summary{
+    height: 4vh;
+}
+#box-skills{
+    height: 6vh;
+}
+
+#box-work{
+    height: 19.3vh;
+}
+
+
+#box-edu{
+    height: 7vh;
+}
+
+
+#box-project{
+    height: 11.3vh;
+}
+
+
+#box-position{
+    border-radius: 15px 15px 30px 30px;
+    height: 12vh;
+}
+

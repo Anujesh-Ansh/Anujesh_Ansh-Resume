@@ -7,7 +7,7 @@
     border-radius: 10px;
     background: rgba( 255, 255, 255, 0.1 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 5px );
+    backdrop-filter: blur( 0.5px );
     -webkit-backdrop-filter: blur( 3px );
     /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
     align-self:flex-start;
@@ -152,12 +152,42 @@
     font-size: 7px;
 }
 
-/* #box-work{
-    height: 19.3vh;
+#box-work{
+    height: 19vh;
+    padding-left: 20px;
+}
+.work-profile{
+    margin-bottom: 5px;
+}
+.company-profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.duration{
+    font-weight: 200;
+}
+.job-profile{
+    font-size: smaller;
+    font-weight: bolder;
+    font-style: italic;
+    color: var(--purple);
+}
+.details{
+    
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    margin-top: 3px;
+    gap: 2px;
+}
+
+.pointwise{
+    font-size: smaller;
 }
 
 
-#box-edu{
+/* #box-edu{
     height: 7vh;
 }
 

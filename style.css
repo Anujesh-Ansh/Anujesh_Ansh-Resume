@@ -204,7 +204,7 @@ header{
     
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 0.5px;
 
     
     transform-style:preserve-3d ;

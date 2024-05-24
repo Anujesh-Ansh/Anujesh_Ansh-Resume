@@ -31,7 +31,7 @@
 
 
 #box-header{
-    height: 8vh;
+    height: 7.5vh;
     border-radius: 30px 30px 15px 15px;
 }
 
@@ -109,13 +109,50 @@
 }
 
 #box-summary{
-    height: 4vh;
+    height: 5vh;
+    padding-left: 20px;
+    
+    
 }
-#box-skills{
-    height: 6vh;
+.resume-title{
+    margin-top: 3px;
+    font-size: 12px;
+    /* margin-bottom:5px ; */
+}
+.liner{
+    margin-top:5px ;
+    margin-bottom:5px ;
+    width: 95%;
+    border: 0.5px solid black;
+    margin-right:20px ;
+}
+.resume-content{
+    font-size: 8px;
+    padding-right: 20px;
 }
 
-#box-work{
+#box-skills{
+    height: 6vh;
+    padding-left: 20px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin-bottom: 3px;
+    
+}
+
+.bold-content{
+    font-weight: bold;
+    font-size: 8px;
+}
+.sub-content{
+    font-size: 7px;
+}
+
+/* #box-work{
     height: 19.3vh;
 }
 
@@ -133,5 +170,5 @@
 #box-position{
     border-radius: 15px 15px 30px 30px;
     height: 12vh;
-}
+} */
 

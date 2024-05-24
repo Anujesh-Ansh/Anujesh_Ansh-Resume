@@ -4,7 +4,7 @@
 }
 .box{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
     background: rgba( 255, 255, 255, 0.1 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 5px );
@@ -32,7 +32,7 @@
 
 #box-header{
     height: 7.5vh;
-    border-radius: 30px 30px 15px 15px;
+    border-radius: 30px 30px 10px 10px;
 }
 
 .head{

@@ -5,9 +5,10 @@
 .box{
     width: 100%;
     border-radius: 10px;
-    background: rgba( 255, 255, 255, 0.1 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 0.5px );
+    background: white;
+    /* background: rgba( 255, 255, 255, 0.1 ); */
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    /* backdrop-filter: blur( 10px ); */
     -webkit-backdrop-filter: blur( 3px );
     /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
     align-self:flex-start;
@@ -19,14 +20,16 @@
     transform: scale(1.7); /* Zoom effect */
     background: white; /* Solid white background */
     z-index: 100;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 }
 
 .box:hover{
     transform: translateZ(10px);
     cursor: grab;
-    transform: scale(1.2); /* Zoom effect */
+    transform: scale(1.5); /* Zoom effect */
     background: white; /* Solid white background */
     z-index: 100;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 }
 
 
@@ -46,8 +49,7 @@
 }
 
 .heading{
-    font-size: 18.6px;
-
+    font-size: 16px;
     font-weight:300;
     margin-top: 20px;
 }
@@ -55,7 +57,7 @@
 .subheading{
     cursor: pointer;
     display: flex;
-    font-size: 6px;
+    font-size: 9px;
     font-weight: bold;
     color: var(--purple);
 }
@@ -109,14 +111,14 @@
 }
 
 #box-summary{
-    height: 5vh;
+    height: 6.6vh;
     padding-left: 20px;
     
     
 }
 .resume-title{
     margin-top: 3px;
-    font-size: 12px;
+    font-size: 15px;
     /* margin-bottom:5px ; */
 }
 .liner{
@@ -127,12 +129,12 @@
     margin-right:20px ;
 }
 .resume-content{
-    font-size: 8px;
+    font-size: 6px;
     padding-right: 20px;
 }
 
 #box-skills{
-    height: 6vh;
+    height: 7vh;
     padding-left: 20px;
 }
 
@@ -153,22 +155,25 @@
 }
 
 #box-work{
-    height: 19vh;
+    height: 20vh;
     padding-left: 20px;
 }
 .work-profile{
     margin-bottom: 5px;
+    font-size: 8px;
 }
 .company-profile{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-size: 8px;
 }
 .duration{
+    font-size: 8px;
     font-weight: 200;
 }
 .job-profile{
-    font-size: smaller;
+    font-size: 8px;
     font-weight: bolder;
     font-style: italic;
     color: var(--purple);

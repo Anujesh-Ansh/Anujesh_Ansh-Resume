@@ -193,9 +193,9 @@ header{
 
 .resume{
     width: 27vw;
-    height: 68.5vh;
+    height: 75.5vh;
     border-radius: 30px;
-    border: 1px solid var(--red);
+    /* border: 1px solid var(--red); */
     
     background-image: url('assets/Anujesh-Ansh_Resume.jpg');
     background-repeat: no-repeat;
@@ -204,7 +204,7 @@ header{
     
     display: flex;
     flex-direction: column;
-    gap: 0.5px;
+    /* gap: 0.5px; */
 
     
     transform-style:preserve-3d ;
@@ -223,7 +223,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 120px;
+    margin-top: 100px;
     font-size: large;
     
 }

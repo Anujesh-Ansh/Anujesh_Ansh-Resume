@@ -4,7 +4,7 @@
 }
 .box{
     width: 100%;
-    border-radius: 10px;
+    
     background: white;
     /* background: rgba( 255, 255, 255, 0.1 ); */
     /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
@@ -21,6 +21,7 @@
     background: white; /* Solid white background */
     z-index: 100;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
 }
 
 .box:hover{
@@ -30,6 +31,7 @@
     background: white; /* Solid white background */
     z-index: 100;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
 }
 
 
